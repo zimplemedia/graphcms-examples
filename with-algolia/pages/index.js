@@ -2,8 +2,8 @@ import algoliasearch from 'algoliasearch/lite';
 import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
 
 const searchClient = algoliasearch(
-  'HOUK2JPM8O',
-  '7af261a39f13a1d238334a26f5def08b'
+  process.env.ALGOLIA_APP_ID,
+ process.env.ALGOLIA_SEARCH_ONLY_API_KEY
 );
 
 export default function IndexPage() {
